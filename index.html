@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="header-logo"><span>Su</span>bham</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times icon-main" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars icon-main" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h3>Hi, I Am <span>Subham Kumar Dash</span><br> From Bangalore</h3>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About Us------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpg" alt="not availble">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, doloremque dolores ex,
+                        consequuntur beatae soluta quia expedita eaque sit doloribus nobis alias amet ducimus non!
+                        Veritatis molestias magnam quaerat unde!</p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contants active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Devlopment</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="experience">
+                        <ul>
+                            <li><span>Hexims.it</span><br>Curently Working As A Fullstack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Aryan Institute Of Engineering Tech.</li>
+                            <li><span>Diploma</span><br>Bhadrak Engg.School Tech.</li>
+                            <li><span>HSC Board</span><br>Sarasada High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------Services---------------------------->
+    <div id="services">
+        <div class="container">
+            <h3 class="sub-title">My Services</h3>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code" style="font-size: 35px;margin-bottom: 30px;"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eos porro sit voluptas dolores eaque non labore fugiat. Eius, aut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop" style="font-size: 35px;margin-bottom: 30px;"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eos porro sit voluptas dolores eaque non labore fugiat. Eius, aut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-store" style="font-size: 35px;margin-bottom: 30px;"></i>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eos porro sit voluptas dolores eaque non labore fugiat. Eius, aut?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------Portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h3 class="sub-title">My Work</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.jpg" alt="not available">
+                    <div class="leyer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, voluptate! Dolores laboriosam quaerat labore sint expedita numquam eligendi eos ipsa?</p>
+                        <a href="#"><i class="fas fa-link" style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work2.jpg" alt="not available">
+                    <div class="leyer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, voluptate! Dolores laboriosam quaerat labore sint expedita numquam eligendi eos ipsa?</p>
+                        <a href="#"><i class="fas fa-music" style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work3.jpg" alt="not available">
+                    <div class="leyer">
+                        <h3>Shoping Online App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, voluptate! Dolores laboriosam quaerat labore sint expedita numquam eligendi eos ipsa?</p>
+                        <a href="#"><i class="fas fa-shopping-cart" style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------------------Contact------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane" style="font-size: 20px;margin-right: 15px;color: #ff004f;"></i>contact@gmail.com</p>
+                    <p><i class="fas fa-phone" style="font-size: 20px;margin-right: 15px;color: #ff004f;"></i>0123456789</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-google" style="margin-left: 10px;"></i></a>
+                        <a href="#"><i class="fab fa-facebook" style="margin-left: 10px;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="margin-left: 10px;"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="margin-left: 10px;"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form id="myform">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright @ Subham. <span><i style="color: #ff004f;" class="fas fa-heart"></i></span></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
